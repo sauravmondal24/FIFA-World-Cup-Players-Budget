@@ -12,6 +12,11 @@ body {
 	color: #ff5e19;
 }
 
+.header-section,
+.footer-sec {
+	background-color: #000000;
+}
+
 /******************
   Body section 
 ****************** */
