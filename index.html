@@ -67,6 +67,7 @@
 		<main class="main-body py-5">
 			<div class="container py-5">
 				<div class="row">
+					<!-- Players List Start  -->
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-md-4 mb-5">
@@ -77,13 +78,21 @@
 										alt=""
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Lionel Messi</h5>
+										<h5 id="messi-name" class="card-title fs-3 fw-bold">
+											Lionel Messi
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>36 Goals</span>
 											<span>.</span>
 											<span> 120 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<button
+											id="messi"
+											href="#"
+											class="btn btn-primary w-100 fw-bold"
+										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -95,13 +104,20 @@
 										alt="..."
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Neymar Jr</h5>
+										<h5 id="neymar-name" class="card-title fs-3 fw-bold">
+											Neymar Jr
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>20 Goals</span>
 											<span>.</span>
 											<span> 100 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<a
+											id="neymar"
+											href="#"
+											class="btn btn-primary w-100 fw-bold"
+											>SELECT</a
+										>
 									</div>
 								</div>
 							</div>
@@ -113,13 +129,20 @@
 										alt="..."
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Kylian Mbappé</h5>
+										<h5 id="kylian-name" class="card-title fs-3 fw-bold">
+											Kylian Mbappé
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>18 Goals</span>
 											<span>.</span>
 											<span> 150 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<a
+											id="kylian"
+											href="#"
+											class="btn btn-primary w-100 fw-bold"
+											>SELECT</a
+										>
 									</div>
 								</div>
 							</div>
@@ -132,13 +155,17 @@
 										alt="..."
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Vítor Machado</h5>
+										<h5 id="vítor-name" class="card-title fs-3 fw-bold">
+											Vítor Machado
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>10 Goals</span>
 											<span>.</span>
 											<span> 120 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<a id="vítor" href="#" class="btn btn-primary w-100 fw-bold"
+											>SELECT</a
+										>
 									</div>
 								</div>
 							</div>
@@ -150,13 +177,20 @@
 										alt="..."
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Sergio Ramos</h5>
+										<h5 id="sergio-name" class="card-title fs-3 fw-bold">
+											Sergio Ramos
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>15 Goals</span>
 											<span>.</span>
 											<span> 180 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<a
+											id="sergio"
+											href="#"
+											class="btn btn-primary w-100 fw-bold"
+											>SELECT</a
+										>
 									</div>
 								</div>
 							</div>
@@ -168,18 +202,26 @@
 										alt="..."
 									/>
 									<div class="card-body bg-dark text-white">
-										<h5 class="card-title fs-3 fw-bold">Renato Sanches</h5>
+										<h5 id="renato-name" class="card-title fs-3 fw-bold">
+											Renato Sanches
+										</h5>
 										<p class="card-text d-flex justify-content-around fs-6">
 											<span>16 Goals</span>
 											<span>.</span>
 											<span> 130 Assist</span>
 										</p>
-										<a href="#" class="btn btn-primary w-100 fw-bold">SELECT</a>
+										<a
+											id="renato"
+											href="#"
+											class="btn btn-primary w-100 fw-bold"
+											>SELECT</a
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- Players List End  -->
 
 					<!--==============================
                         Calculation Section start 
@@ -196,12 +238,9 @@
 									<h2>Selected - V</h2>
 								</div>
 								<div class="card-body bg-dark text-white">
-									<ul class="list-unstyled">
-										<li>1.Leonar Massi</li>
-										<li>1.Leonar Massi</li>
-										<li>1.Leonar Massi</li>
-										<li>1.Leonar Massi</li>
-										<li>1.Leonar Massi</li>
+									<ul id="list-container" class="list-group bg-dark">
+										<!-- <li class="list-group-item">1. Lionel Messi</li>
+										<li class="list-group-item">2. Lionel Messi</li> -->
 									</ul>
 								</div>
 							</div>
@@ -220,29 +259,44 @@
 								<div class="card-body bg-dark text-white">
 									<div class="d-flex justify-content-between">
 										<label for="">Per Player</label>
-										<input class="w-50" type="number" name="" id="" />
+										<input
+											class="w-50"
+											type="number"
+											name=""
+											id="par-player-rate"
+										/>
 									</div>
-									<a href="#" class="btn btn-primary w-100 fw-bold my-3"
+									<a
+										id="calculator"
+										href="#"
+										class="btn btn-primary w-100 fw-bold my-3"
 										>Calculator</a
 									>
 									<h2 class="fs-5 py-3 d-flex justify-content-between">
-										Player Expenses <span><span>$</span> 5000</span>
+										Player Expenses
+										<p>$ <span id="players-total-cost">000</span></p>
 									</h2>
 									<div class="d-flex justify-content-between">
 										<label for="">Manager</label>
-										<input class="w-50" type="number" name="" id="" />
+										<input class="w-50" type="number" name="" id="manager" />
 									</div>
 									<br />
 									<div class="d-flex justify-content-between">
 										<label for="">Coach</label>
-										<input class="w-50" type="number" name="" id="" />
+										<input class="w-50" type="number" name="" id="coach" />
 									</div>
 
-									<a href="#" class="btn btn-primary w-100 fw-bold my-3"
+									<a
+										id="final-amount"
+										href="#"
+										class="btn btn-primary w-100 fw-bold my-3"
 										>Calculator Total</a
 									>
 									<h2 class="fs-5 d-flex justify-content-between">
-										Total <span class="text-danger"><span>$</span> 5000</span>
+										Total
+										<p class="text-danger">
+											$ <span id="total-amount" class="text-danger">000</span>
+										</p>
 									</h2>
 								</div>
 							</div>
@@ -273,6 +327,8 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="assets/js/budgetCal.js"></script>
+		<script src="assets/js/functionList.js"></script>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
