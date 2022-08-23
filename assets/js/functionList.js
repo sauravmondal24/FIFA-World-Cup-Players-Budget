@@ -1,3 +1,5 @@
+// Players Name set function
+
 function setPlayersName(eventId, nameId) {
 	let value = document
 		.getElementById(eventId)
@@ -28,11 +30,15 @@ function setPlayersName(eventId, nameId) {
 	return value;
 }
 
+// Input value Get Function
+
 function getInputValueById(elementID) {
 	let parPlayerRate = document.getElementById(elementID);
 	let parPlayerRateValue = parseFloat(parPlayerRate.value);
 	return parPlayerRateValue;
 }
+
+// Text element value set Function
 
 function setElementValueById(IdName, values) {
 	let setTotalCost = document.getElementById(IdName);

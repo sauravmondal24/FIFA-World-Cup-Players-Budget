@@ -2,9 +2,9 @@
 
 function calculatePlayerTotal() {
 	let allPlayers = 0;
-
 	let listContainer = document.getElementById('list-container');
 	allPlayers = listContainer.childNodes.length;
+
 	let allPlayerCost = getInputValueById('par-player-rate');
 
 	let playerExpenses = allPlayers * allPlayerCost;
@@ -25,6 +25,5 @@ document.getElementById('final-amount').addEventListener('click', function () {
 	let managerAmount = getInputValueById('manager');
 	let coachAmount = getInputValueById('coach');
 	let totalAmount = playerExpenses + managerAmount + coachAmount;
-
 	setElementValueById('total-amount', totalAmount);
 });

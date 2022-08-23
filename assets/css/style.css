@@ -1,10 +1,17 @@
+/* Google Font Import with cdn */
+
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
+/******************
+  Body section 
+****************** */
+
 body {
 	font-family: 'Manrope', sans-serif;
 }
+
 .head-title {
 	font-family: 'Berkshire Swash';
 	padding-top: 120px;
@@ -17,9 +24,6 @@ body {
 	background-color: #000000;
 }
 
-/******************
-  Body section 
-****************** */
 .main-body {
 	background-color: #151515;
 }
