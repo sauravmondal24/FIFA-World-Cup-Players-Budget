@@ -24,7 +24,7 @@
 		<header class="header-section">
 			<section class="banner">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 header-image">
 						<img
 							class="img-fluid pt-4"
 							src="assets/images/Mask Group.png"
@@ -36,9 +36,10 @@
 							FIFA World Cup Players Budget
 						</h1>
 						<p class="text-white align-bottom text-center fs-5 fw-normal">
-							Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-							amet sint. Velit officia consequat duis enim velit mollit.
-							Exercitation veniam consequat sunt nostrud amet.
+							The International Federation of Association Football (FIFA) is
+							forecasting an expenditure of roughly 1.7 billion U.S. dollars on
+							the Qatar 2022 World Cup. Around 322 million U.S. dollars were
+							budgeted towards operational expenses for the event.
 						</p>
 					</div>
 					<div class="col-md-3 text-end">
@@ -48,7 +49,7 @@
 							alt=""
 						/>
 						<img
-							class="img-fluid"
+							class="img-fluid football"
 							src="assets/images/soccer-goal-top-png-8 4.png"
 							alt=""
 						/>
@@ -57,12 +58,12 @@
 			</section>
 		</header>
 		<!-----------------------------
-             Header Section End
-        ------------------------------>
+            Header Section End
+      ------------------------------>
 
 		<!-----------------------------
-             players section start
-        ------------------------------>
+          players section start
+    ------------------------------>
 
 		<main class="main-body py-5">
 			<div class="container py-5">
@@ -89,7 +90,7 @@
 										<button
 											id="messi"
 											href="#"
-											class="btn btn-primary w-100 fw-bold"
+											class="btn btn-primary w-100 fw-bold dis-btn player"
 										>
 											SELECT
 										</button>
@@ -112,12 +113,13 @@
 											<span>.</span>
 											<span> 100 Assist</span>
 										</p>
-										<a
+										<button
 											id="neymar"
 											href="#"
-											class="btn btn-primary w-100 fw-bold"
-											>SELECT</a
+											class="btn btn-primary w-100 fw-bold player"
 										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -137,12 +139,13 @@
 											<span>.</span>
 											<span> 150 Assist</span>
 										</p>
-										<a
+										<button
 											id="kylian"
 											href="#"
-											class="btn btn-primary w-100 fw-bold"
-											>SELECT</a
+											class="btn btn-primary w-100 fw-bold player"
 										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -163,9 +166,13 @@
 											<span>.</span>
 											<span> 120 Assist</span>
 										</p>
-										<a id="vítor" href="#" class="btn btn-primary w-100 fw-bold"
-											>SELECT</a
+										<button
+											id="vítor"
+											href="#"
+											class="btn btn-primary w-100 fw-bold player"
 										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -185,12 +192,13 @@
 											<span>.</span>
 											<span> 180 Assist</span>
 										</p>
-										<a
+										<button
 											id="sergio"
 											href="#"
-											class="btn btn-primary w-100 fw-bold"
-											>SELECT</a
+											class="btn btn-primary w-100 fw-bold player"
 										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -210,12 +218,13 @@
 											<span>.</span>
 											<span> 130 Assist</span>
 										</p>
-										<a
+										<button
 											id="renato"
 											href="#"
-											class="btn btn-primary w-100 fw-bold"
-											>SELECT</a
+											class="btn btn-primary w-100 fw-bold player"
 										>
+											SELECT
+										</button>
 									</div>
 								</div>
 							</div>
@@ -224,8 +233,8 @@
 					<!-- Players List End  -->
 
 					<!--==============================
-                        Calculation Section start 
-                    =============================== -->
+                Calculation Section start 
+            =============================== -->
 
 					<div class="col-md-3">
 						<!-- Selected Players section start  -->
@@ -238,10 +247,7 @@
 									<h2>Selected - V</h2>
 								</div>
 								<div class="card-body bg-dark text-white">
-									<ul id="list-container" class="list-group bg-dark">
-										<!-- <li class="list-group-item">1. Lionel Messi</li>
-										<li class="list-group-item">2. Lionel Messi</li> -->
-									</ul>
+									<ul id="list-container" class="list-group bg-dark"></ul>
 								</div>
 							</div>
 						</div>
@@ -249,6 +255,7 @@
 						<!-- Selected Players section end  -->
 
 						<!-- All cost Calculation section start  -->
+
 						<div class="col-md-12 mb-5">
 							<div
 								class="card border border-secondary text-white text-center gx-2"
@@ -266,12 +273,13 @@
 											id="par-player-rate"
 										/>
 									</div>
-									<a
+									<button
 										id="calculator"
-										href="#"
 										class="btn btn-primary w-100 fw-bold my-3"
-										>Calculator</a
+										type="button"
 									>
+										Calculator
+									</button>
 									<h2 class="fs-5 py-3 d-flex justify-content-between">
 										Player Expenses
 										<p>$ <span id="players-total-cost">000</span></p>
@@ -286,12 +294,12 @@
 										<input class="w-50" type="number" name="" id="coach" />
 									</div>
 
-									<a
+									<button
 										id="final-amount"
-										href="#"
 										class="btn btn-primary w-100 fw-bold my-3"
-										>Calculator Total</a
 									>
+										Calculator Total
+									</button>
 									<h2 class="fs-5 d-flex justify-content-between">
 										Total
 										<p class="text-danger">
@@ -301,11 +309,13 @@
 								</div>
 							</div>
 						</div>
+
 						<!-- All cost Calculation section end  -->
 					</div>
+
 					<!--==============================
-                        Calculation Section start 
-                    =============================== -->
+                Calculation Section start 
+            =============================== -->
 				</div>
 			</div>
 		</main>

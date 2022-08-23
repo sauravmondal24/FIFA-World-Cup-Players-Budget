@@ -1,34 +1,30 @@
-function getInputValueById(elementID) {
-	let parPlayerRate = document.getElementById(elementID);
-	let parPlayerRateValue = parseFloat(parPlayerRate.value);
-	return parPlayerRateValue;
-}
+// All Player Expenses Calculation
 
-function setElementValueById(IdName, values) {
-	let setTotalCost = document.getElementById(IdName);
-	setTotalCost.innerText = values;
-}
+function calculatePlayerTotal() {
+	let allPlayers = 0;
 
-document.getElementById('calculator').addEventListener('click', function () {
-	let allPlayers = 5;
-
+	let listContainer = document.getElementById('list-container');
+	allPlayers = listContainer.childNodes.length;
 	let allPlayerCost = getInputValueById('par-player-rate');
 
 	let playerExpenses = allPlayers * allPlayerCost;
 
-	console.log(playerExpenses);
-
 	setElementValueById('players-total-cost', playerExpenses);
+
+	return playerExpenses;
+}
+
+document.getElementById('calculator').addEventListener('click', function () {
+	calculatePlayerTotal();
 });
 
-document.getElementById('final-amount').addEventListener('click', function () {
-	let playerCost = document.getElementById('players-total-cost');
-	let playerCostValue = parseFloat(playerCost.innerText);
+// Total Amount Calculation
 
+document.getElementById('final-amount').addEventListener('click', function () {
+	const playerExpenses = calculatePlayerTotal();
 	let managerAmount = getInputValueById('manager');
 	let coachAmount = getInputValueById('coach');
-
-	let totalAmount = playerCostValue + managerAmount + coachAmount;
+	let totalAmount = playerExpenses + managerAmount + coachAmount;
 
 	setElementValueById('total-amount', totalAmount);
 });
